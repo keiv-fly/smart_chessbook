@@ -2,15 +2,30 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Smart Chessbook</title>
+    <link rel="stylesheet" href="css/chessboard.min.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Chessbook</h1>
     <!-- All of the Node.js APIs are available in this renderer process. -->
+    <div id="board" style="width: 400px"></div>
+    <p>Status: <span id="status"></span></p>
+    <p>FEN: <span id="fen"></span></p>
+    <p>PGN: <span id="pgn"></span></p>
+    <p>Polyglot Keys: <span id="plg"></span></p>
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
+    <!-- normal script imports etc  -->
+    <script src="lib/jquery.min.js"></script>    
+    <script src="lib/chessboard.min.js"></script>
+    <script src="lib/my_board.js"></script>   
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')

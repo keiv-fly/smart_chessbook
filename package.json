@@ -4,7 +4,7 @@
   "description": "Chessbook",
   "main": "main.js",
   "scripts": {
-    "run": "electron ."
+    "start": "electron ."
   },
   "repository": "https://github.com/keiv-fly/smart_chessbook.git",
   "keywords": [
@@ -15,5 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "chess.js": "^0.10.2"
   }
 }
