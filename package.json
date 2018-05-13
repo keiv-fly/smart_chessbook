@@ -1,21 +1,18 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "smart-chessbook",
+  "version": "0.1.0",
+  "description": "Chessbook",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "run": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/keiv-fly/smart_chessbook.git",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "chess"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "keiv-fly",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^2.0.0"
   }
